@@ -46,16 +46,16 @@ This file contains all of my Pseudo Code and checklisting for this project. If y
   - [X] run the seeds file.
   - [X] exit mysql
 
-- [ ] Config Setup
+- [X] Config Setup
   - [X] inside connection.js set up the code to connect Node to MySQL.
     - [X] export the connection.
-  - [ ] inside the orm file:
-    - [ ] require connection.js
-    - [ ] create the following methods:
-      - [ ] selectAll()
-      - [ ] insertBurger()
-      - [ ] updateBurger()
-    - [ ] esport ORM.
+  - [X] inside the orm file:
+    - [X] require connection.js
+    - [X] create the following methods:
+      - [X] selectAll()
+      - [X] insertBurger()
+      - [X] updateBurger()
+    - [X] export ORM.
 
 - [ ] Model setup
   - [ ] inside burger_model.js
