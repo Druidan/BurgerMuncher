@@ -34,11 +34,17 @@ const orm = {
                 throw err;
             }
             cb(result);
-        })
+        });
     },
 
-    insertBurger: () => {
-
+    insertBurger: (table, newBurger, cb) => {
+        const queryString = `INSERT INTO ${table} (burger_name) VALUES (${newBurger}) `;
+        connection.query(queryString, (err, result) => {
+            if (err) {
+                throw err;
+            }
+            cb(result);
+        });
     },
 
     updateBurger: () => {
