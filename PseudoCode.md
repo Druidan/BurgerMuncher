@@ -63,12 +63,12 @@ This file contains all of my Pseudo Code and checklisting for this project. If y
     - [X] create code that will call ORM functions using the burger specific input for the ORM.
     - [X] export burger_model
 
-- [ ] Controller setup
-  - [ ]inside burgers_controller.js:
-    - [ ] require Express
-    - [ ] require burger_model.js
-    - [ ] create the router for the app.
-    - [ ] export the router.
+- [X] Controller setup
+  - [X]inside burgers_controller.js:
+    - [X] require Express
+    - [X] require burger_model.js
+    - [X] create the router for the app.
+    - [X] export the router.
 
 - [ ] View setup
   - [ ] set up the main.handlebars file so its useable by Handlebars.

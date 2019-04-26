@@ -1,12 +1,16 @@
 
 require(`dotenv`).config();
 const mysql = require(`mysql`);
+const pswd = require(`./mysqlPswd`);
+
+//Establish MySQL Password from .env through mysqlPswd.js
+const MySQLPswd = pswd.mysqlPswd.pswd;
 
 const connection = mysql.createConnection( {
     host: "localhost",
     port: 3306,
     user: "root",
-    password: process.env.MYSQL_PSWD,
+    password: MySQLPswd,
     database: "burgers_db"
 });
 
