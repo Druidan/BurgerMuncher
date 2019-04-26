@@ -16,7 +16,11 @@ const burger = {
         });
     },
     //-----------
-
+    updateBurger: (condition, cb) => {
+        orm.updateBurger("burgers", condition, function(res) {
+            cb(res)
+        });
+    }
 };
 
 //-------------------------------------
