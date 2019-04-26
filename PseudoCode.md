@@ -57,11 +57,11 @@ This file contains all of my Pseudo Code and checklisting for this project. If y
       - [X] updateBurger()
     - [X] export ORM.
 
-- [ ] Model setup
-  - [ ] inside burger_model.js
-    - [ ] require orm.js
-    - [ ] create code that will call ORM functions using the burger specific input for the ORM.
-    - [ ] export burger_model
+- [X] Model setup
+  - [X] inside burger_model.js
+    - [X] require orm.js
+    - [X] create code that will call ORM functions using the burger specific input for the ORM.
+    - [X] export burger_model
 
 - [ ] Controller setup
   - [ ]inside burgers_controller.js:
