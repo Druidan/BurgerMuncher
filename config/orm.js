@@ -47,10 +47,17 @@ const orm = {
         });
     },
 
-    updateBurger: () => {
-
+    updateBurger: (table, objColAndVal, condition, cb) => {
+        const updateInfo = objToSql(objColAndVal)
+        const queryString = `UPDATE ${table} SET ${updateInfo} WHERE ${condition}`;
+        connection.query(queryString, (err, result) => {
+            if (err) {
+                throw err;
+            }
+            cb(result);
+        });
     },
-}
+};
 
 //-------------------------------------
 
