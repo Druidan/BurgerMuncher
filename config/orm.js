@@ -27,8 +27,14 @@ function objToSql(ob) {
 
 const orm = {
 
-    selectAll: () => {
-
+    selectAll: (table, cb) => {
+        const queryString = `SELECT * FROM ${table};`;
+        connection.query(queryString, (err, result) => {
+            if (err) {
+                throw err;
+            }
+            cb(result);
+        })
     },
 
     insertBurger: () => {
