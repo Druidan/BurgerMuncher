@@ -5,19 +5,25 @@ const orm = require("../config/orm.js"); // Import the ORM to create functions t
 const burger = {
     //-----------
     selectAll: (cb) => {
-        orm.selectAll("burgers", function (res) {
+        orm.selectAll("burgers", (res) => {
             cb(res)
         });
     },
     //-----------
     createBurger: (newBurger, cb) => {
-        orm.createBurger("burgers", newBurger, function (res) {
+        orm.createBurger("burgers", newBurger, (res) => {
             cb(res)
         });
     },
     //-----------
-    updateBurger: (condition, cb) => {
-        orm.updateBurger("burgers", condition, function (res) {
+    updateBurger: (objColAndVal, condition, cb) => {
+        orm.updateBurger("burgers", objColAndVal, condition, (res) => {
+            cb(res)
+        });
+    },
+        //-----------
+    removeBurger: (condition, cb) => {
+        orm.removeBurger("burgers", condition, (res) => {
             cb(res)
         });
     }

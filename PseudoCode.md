@@ -33,7 +33,7 @@ This file contains all of my Pseudo Code and checklisting for this project. If y
     - [X] layouts
       - [X] main.handelbars
 
-- [ ] Write the scheme sql file so that it does the following:
+- [X] Write the scheme sql file so that it does the following:
   - [X] Create a MySQL Database called "burgers_db."
   - [X] Create a table inside the database called "burgers." It will include the following fields:
     - [X] id (auto-incrementing, primary key)
@@ -70,9 +70,9 @@ This file contains all of my Pseudo Code and checklisting for this project. If y
     - [X] create the router for the app.
     - [X] export the router.
 
-- [ ] View setup
-  - [ ] set up the main.handlebars file so its useable by Handlebars.
-  - [ ] set up index.handlebars with a template Handlebars can render onto.
-  - [ ] create a button in the index that will submit user input to the database.
+- [X] View setup
+  - [X] set up the main.handlebars file so its useable by Handlebars.
+  - [X] set up index.handlebars with a template Handlebars can render onto.
+  - [X] create a button in the index that will submit user input to the database.
 
 - [ ] Deploy on Heroku (use MySQL Heroku Deployment Guide)

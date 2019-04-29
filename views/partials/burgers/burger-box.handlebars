@@ -1,7 +1,10 @@
-<li>
-	{{name}}
+<li class="burgerDiv">
+	<h3 class="burgerName">{{burger_name}}</h3>
 
-	<button class="change-munched" data-id="{{id}}" data-determineMunched="{{munch}}">
-		{{#if sleep}}Eat That Burger!{{else}}That was yummy!{{/if}}
+	<button class="change-munched brgrBtn" data-id="{{id}}" data-munch="{{munched}}">
+		{{#if munched}}Eat That Burger!{{else}}Eat it Again!{{/if}}
 	</button>
+
+	<button class="delete-burger brgrBtn" data-id="{{id}}">Remove Burger</button>
+
 </li>

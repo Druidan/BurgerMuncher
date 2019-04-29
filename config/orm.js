@@ -8,7 +8,7 @@ function objToSql(ob) {
     let arr = [];
         // loop through the keys and push the key/value as a string int arr
         for (let key in ob) { 
-            const value = ob[key];
+            let value = ob[key];
                 // check to skip hidden properties
                 if (Object.hasOwnProperty.call(ob, key)) { 
                         // if string with spaces, add quotations
@@ -39,7 +39,8 @@ const orm = {
     },
     //-----------
     createBurger: (table, newBurger, cb) => {
-        const queryString = `INSERT INTO ${table} (burger_name) VALUES (${newBurger}) `;
+        let trueBurger = `'${newBurger}'`;
+        const queryString = `INSERT INTO ${table} (burger_name) VALUES (${trueBurger}) `;
         connection.query(queryString, (err, result) => {
             if (err) {
                 throw err;
@@ -49,8 +50,20 @@ const orm = {
     },
     //-----------
     updateBurger: (table, objColAndVal, condition, cb) => {
+        console.log(condition)
         const updateInfo = objToSql(objColAndVal)
-        const queryString = `UPDATE ${table} SET ${updateInfo} WHERE ${condition}`;
+        const queryString = `UPDATE ${table} SET ${updateInfo} WHERE ${condition};`;
+        connection.query(queryString, (err, result) => {
+            if (err) {
+                throw err;
+            }
+            cb(result);
+        });
+    },
+    //-----------
+    removeBurger: (table, condition, cb) => {
+        const queryString = `DELETE FROM ${table} WHERE ${condition};`;
+        console.log(queryString);
         connection.query(queryString, (err, result) => {
             if (err) {
                 throw err;
