@@ -144,11 +144,14 @@ Global Content CSS
     padding: 8px;
     padding-top: 0px;
     display: grid;
+    justify-content: center
     grid-gap: 10px;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template: auto / 1fr;
     grid-template-areas:
-        "toMunch   muncher   munched"
-        "addBurger  addBurger   addBurger"
+        "toMunch"
+        "muncher"
+        "munched"
+        "addBurger"
 }
 
 /* -------------- */
@@ -162,11 +165,12 @@ Global Content CSS
 .muncherDiv {
     grid-area: muncher;
     margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100px;
     display: grid;
     justify-content: center;
-    align-content: top;
-    padding-top: 100px;
+    align-content: center;
 }
 
 .muncher {
@@ -270,6 +274,10 @@ Burger Divs CSS
     .mainContent {
         padding: 20px;
         padding-top: 0px;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-areas:
+            "toMunch   muncher   munched"
+            "addBurger  addBurger   addBurger"
     }
 
     .create-form {
