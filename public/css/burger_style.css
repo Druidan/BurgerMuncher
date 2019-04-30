@@ -63,7 +63,7 @@ Background and Body CSS
 
 .newBody {
     display: grid;
-    width: 100vw;
+    width: 96vw;
     grid-gap: 10px;
     grid-template-columns: auto repeat(4, 1fr) auto;
     grid-template-areas:
