@@ -144,7 +144,7 @@ Global Content CSS
     padding: 8px;
     padding-top: 0px;
     display: grid;
-    justify-content: center
+    justify-content: center;
     grid-gap: 10px;
     grid-template: auto / 1fr;
     grid-template-areas:
