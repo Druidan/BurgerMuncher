@@ -23,8 +23,8 @@ We will be using the following NPM for our app:
 
 ## Active Bugs and Issues
 
-##Future Features
+## Future Features
 Once our MVP is done, we will focus on first adding some charm to the app to encourage our users to keep using it and to make the process fun. Secondly, we will add multiple user functionality (as if it wasn't a class project ;P ).
-* Since we are using the "Muncher" from Word Munchers as our application's mascot, it would be fun if, whenever a burger is munched, our little figure actually munches it. So either a gif, or something we make on our own to show him munching would be nice. Especially if we could add a burger to his mouth in the animation.
-* Add a munching sound whenever a burger is munched.
+-[X] Since we are using the "Muncher" from Word Munchers as our application's mascot, it would be fun if, whenever a burger is munched, our little figure actually munches it. So either a gif, or something we make on our own to show him munching would be nice. Especially if we could add a burger to his mouth in the animation.
+-[X] Add a munching sound whenever a burger is munched.
 * Restructure the databases so that there can be multiple users that track each of their eaten burgers.
